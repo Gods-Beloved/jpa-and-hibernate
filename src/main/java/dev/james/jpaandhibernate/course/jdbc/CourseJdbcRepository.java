@@ -1,4 +1,4 @@
-package dev.james.jpaandhibernate.course.jpa;
+package dev.james.jpaandhibernate.course.jdbc;
 
 import dev.james.jpaandhibernate.course.Course;
 import org.springframework.beans.factory.annotation.Autowired;

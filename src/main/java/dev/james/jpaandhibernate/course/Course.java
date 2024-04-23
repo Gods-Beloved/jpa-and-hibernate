@@ -1,16 +1,21 @@
 package dev.james.jpaandhibernate.course;
 
-import dev.james.jpaandhibernate.course.jpa.CourseJdbcRepository;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
-
+//@Entity a mapping from bean to table
 @Entity
 public class Course {
 
+    //@Id maps to primary key
+    //@Column maps to the column of the table
+
     @Id
     private long id;
+    @Column(name="name")
     private String name;
+    @Column(name = "author")
     private String author;
 
     public Course(){
